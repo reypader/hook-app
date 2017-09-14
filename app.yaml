@@ -1,6 +1,7 @@
 runtime: python27
 api_version: 1
 threadsafe: true
+service: resource
 
 handlers:
 - url: /static
@@ -41,4 +42,4 @@ env_variables:
   # The following values are to be replaced by information from the output of
   # 'gcloud service-management deploy swagger.json' command.
   ENDPOINTS_SERVICE_NAME: rmp-sandbox.appspot.com
-  ENDPOINTS_SERVICE_VERSION: 2017-09-14r0
+  ENDPOINTS_SERVICE_VERSION: 2017-09-14r1
