@@ -1,8 +1,4 @@
-from flask import Flask
+import endpoints
+from echo.api import EchoApi
 
-app = Flask(__name__)
-
-
-@app.route('/')
-def hello():
-    return 'Hello'
+api = endpoints.api_server([EchoApi])
